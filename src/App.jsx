@@ -1,9 +1,11 @@
+import Header from "./components/Header"
 
 function App() {
   
 
   return (
     <>
+    <Header/>
       
     <header class="py-5 header">
         <div class="container-xl">
