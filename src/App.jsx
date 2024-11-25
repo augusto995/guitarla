@@ -1,9 +1,12 @@
+import { useState } from "react"
 import Header from "./components/Header"
 import Guitar from "./components/Guitar"
 
 function App() {
-  
 
+    //Sate
+    const [auth, setAuth] = useState(false)
+    console.log(auth)
   return (
     <>
     <Header/>
@@ -11,6 +14,8 @@ function App() {
 
     <main className="container-xl mt-5">
         <h2 className="text-center">Nuestra Colección</h2>
+
+        <button onClick={() => setAuth(true)}></button>
 
         <div className="row mt-5">
             
