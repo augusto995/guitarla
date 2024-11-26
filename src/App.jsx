@@ -1,9 +1,12 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Header from "./components/Header"
 import Guitar from "./components/Guitar"
 
 function App() {
 
+  useEffect(() => {
+    console.log('El componente se cargó ');
+}, []);
 
   return (
     <>
