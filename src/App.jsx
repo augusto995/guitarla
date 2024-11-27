@@ -18,7 +18,11 @@ function App() {
             
             {data.map(() => 
               (
-                <Guitar/>
+                <Guitar
+                price={100}
+                auth={true}
+
+                />
               )
             )}
 
