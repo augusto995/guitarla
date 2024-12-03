@@ -9,6 +9,10 @@ function App() {
   //No se crea en Guitar por que es un componente y tendria 12 carritos(o la cantidad de guitarras que sea)
   const [cart, setCart] = useState([])
 
+  function addToCart(item) {
+    setCart(prevCart =>[...prevCart, item])
+  }
+
   return (
     <>
     <Header/>
@@ -24,6 +28,7 @@ function App() {
                   key={guitar.id}
                   guitar={guitar}
                   setCart={setCart}
+                  addToCart={addToCart}
                 />
               )
             )}
