@@ -6,6 +6,8 @@ import { db } from "./data/db";
 function App() {
 
   const [data, setData] = useState(db)
+  //No se crea en Guitar por que es un componente y tendria 12 carritos(o la cantidad de guitarras que sea)
+  const [cart, setCart] = useState([])
 
   return (
     <>
@@ -21,6 +23,7 @@ function App() {
                 <Guitar
                   key={guitar.id}
                   guitar={guitar}
+                  setCart={setCart}
                 />
               )
             )}
