@@ -10,10 +10,14 @@ function App() {
   const [cart, setCart] = useState([])
 
   function addToCart(item) {
-
+    //findIndex devuelve -1 si el elemnto no existe
     const itemExist = cart.findIndex(guitar => guitar.id === item.id )
-    console.log(itemExist)
-    setCart(prevCart =>[...prevCart, item])
+    if(itemExist >= 0){
+
+    } else{
+      item.quantity = 1
+      setCart([...cart, item])
+    }
   }
 
   return (
