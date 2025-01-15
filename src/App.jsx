@@ -20,6 +20,7 @@ function App() {
       item.quantity = 1
       setCart([...cart, item])
     }
+    
   }
 
   return (
