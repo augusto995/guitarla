@@ -2,6 +2,8 @@
 
 export default function Header({cart}) {
 
+    
+
     //State derivado
     const isEmpty = () => cart.length === 0
 
