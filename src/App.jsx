@@ -13,7 +13,7 @@ function App() {
   function addToCart(item) {
     //findIndex devuelve -1 si el elemnto no existe
     const itemExist = cart.findIndex(guitar => guitar.id === item.id )
-    if(itemExist >= 0){
+    if(itemExist >= 0){ //Ya existe en el carrito
       const updatedCart = [...cart]
       updatedCart[itemExist].quantity++
       setCart(updatedCart)

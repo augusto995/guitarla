@@ -16,6 +16,8 @@ export default function Guitar({guitar, addToCart}) {
                         type="button"
                         className="btn btn-dark w-100"
                         onClick={() => addToCart(guitar)}
+                        //Se usa callback por que al tener argumentos js 
+                        // lo interpreta como una funcion que hay que llamar sin esperar al onClick
                     >Agregar al Carrito</button>
                 </div>
             </div>
