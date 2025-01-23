@@ -14,7 +14,7 @@ export default function Header({cart, removeFromCart, increaseQuantity, decrease
                 
                 <div className="col-8 col-md-3">
                     <a href="index.html">
-                        <img className="img-fluid" src="./img/logo.svg" alt="imagen logo" />
+                        <img className="img-fluid" src="/img/logo.svg" alt="imagen logo" />
                     </a>
                 </div>
 
@@ -22,7 +22,7 @@ export default function Header({cart, removeFromCart, increaseQuantity, decrease
                     <div 
                         className="carrito"
                     >
-                        <img className="img-fluid" src="./img/carrito.png" alt="imagen carrito" />
+                        <img className="img-fluid" src="/img/carrito.png" alt="imagen carrito" />
 
                         <div id="carrito" className="bg-white p-3">
 
