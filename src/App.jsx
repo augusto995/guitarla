@@ -6,9 +6,14 @@ import { db } from "./data/db";
 //Descargar react developer tools
 function App() {
 
+
+  const initialCart = () => {
+    const localStorageCart = localStorage.getItem('cart')
+    return localStorageCart ? JSON.parse(localStorageCart) : []
+  }
   const [data, setData] = useState(db)
   //No se crea en Guitar por que es un componente y tendria 12 carritos(o la cantidad de guitarras que sea)
-  const [cart, setCart] = useState([])
+  const [cart, setCart] = useState(initialCart)
 
 
   const MIN_ITEMS = 1;
