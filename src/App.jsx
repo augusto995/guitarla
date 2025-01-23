@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Header from "./components/Header"
 import Guitar from "./components/Guitar"
 import { db } from "./data/db";
@@ -9,8 +9,15 @@ function App() {
   const [data, setData] = useState(db)
   //No se crea en Guitar por que es un componente y tendria 12 carritos(o la cantidad de guitarras que sea)
   const [cart, setCart] = useState([])
+
+
   const MIN_ITEMS = 1;
   const MAX_ITEMS = 5;
+
+  useEffect (() =>{
+    localStorage.setItem('cart', JSON.stringify(cart))
+  }, [cart])
+
 
   function addToCart(item) {
     //findIndex devuelve -1 si el elemnto no existe
@@ -24,6 +31,7 @@ function App() {
       item.quantity = 1
       setCart([...cart, item])
     }
+
   }
 
   function removeFromCart(id) {
