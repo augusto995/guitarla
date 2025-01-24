@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import Header from "./components/Header"
 import Guitar from "./components/Guitar"
 import { db } from "./data/db";
+import { useCart } from "./hooks/useCart";
 
 //Ventajas de crear Hooks
 //Incorporar State y otros hooks a tu codigo para reutilizar en otro proyecto
@@ -10,6 +11,7 @@ import { db } from "./data/db";
 
 function App() {
 
+  const {} = useCart()
 
   const initialCart = () => {
     const localStorageCart = localStorage.getItem('cart')
