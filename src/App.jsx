@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import Header from "./components/Header"
 import Guitar from "./components/Guitar"
 import { db } from "./data/db";
+
 //Ventajas de crear Hooks
 //Incorporar State y otros hooks a tu codigo para reutilizar en otro proyecto
 //Organizar codigo, componentes solo para vista, hook solo para logica
