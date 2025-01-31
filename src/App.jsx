@@ -2,6 +2,9 @@ import Header from "./components/Header"
 import Guitar from "./components/Guitar"
 import { useCart } from "./hooks/useCart";
 
+//Typescript: Lenguaje, superconjunto tipado para js. Tipos estaticos
+//Ventajas: Comprobacion de tipos durante compilacion
+//          Buen autocompletado
 
 
 function App() {
